@@ -4,89 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticky-Position</title>
-</head>
-<body>
-    <h1>The Short Stories!!</h1>
-    <div class="box">
-        
-    <p class="box1">Moral: True greatness comes from kindness and wisdom, not just physical strength.</p>
-
-    <h2>The Kind Elephant</h2>
-    <p>In a lush jungle, there lived a wise and kind elephant named Ellie. Animals from all around sought her advice because she was known for her gentle wisdom.
-
-        One day, Leo, a young and boastful lion, challenged Ellie to a strength contest. But Ellie proposed a different challenge: to make the most animals smile in a day.
-        
-        Leo roared at the animals, trying to make them smile, but they were too scared. Ellie, on the other hand, listened to their problems and shared her wisdom, bringing smiles to their faces. By the end of the day, Ellie had won the contest.
-        
-        Leo realized that true greatness was not just about strength but also about kindness and wisdom. He asked Ellie to teach him, and from that day on, he became a wiser and kinder king.</p>
-        
-    </div>
-    <div class="box">
-    <p class="box1">Moral: True magic is found in kindness and creativity, not in material possessions.</p>
-
-    <h2>The Magical Paintbrush</h2>
-    <p>In a small village, there lived a poor but talented artist named Mia. She dreamed of a magic paintbrush that could bring her paintings to life. One day, an old man gave her a magical paintbrush.
-
-        Mia began to create beautiful paintings, and every stroke of the brush made her creations come alive. She used this power to help her village, making food and shelter for those in need.
-        
-        But word of her magic paintbrush reached a greedy king who demanded it for himself. Mia refused, and the king grew angry. He sent his soldiers to take the brush by force. When they tried, the brush painted a fierce storm, and the soldiers fled.
-        
-        Mia, realizing the brush’s potential for misuse, decided to hide it where no one could find it. She continued to use her art to bring happiness and prosperity to her village, teaching them that true magic lies in kindness and creativity.</p>
-        
-    </div>
-    <div class="box">
-    <p class="box1">Moral: With patience and care, even seemingly unpromising situations can turn into something beautiful.</p>
-
-    <h2>The Three Seeds of Hope</h2>
-    <p>Once, there was a boy named Sam who found three different seeds. He decided to plant them in his garden.
-
-        The first seed grew into a tall, strong tree that bore delicious fruits. Sam shared the fruits with the hungry villagers, and they were grateful.
-        
-        The second seed grew into a small but sturdy bush covered in colourful flowers. Sam used these flowers to make perfumes and oils, creating a successful business that supported his family.
-        
-        The third seed, however, yielded only thorns and weeds. Sam considered uprooting it, but he decided to give it another chance. He removed the thorns and took good care of it. Over time, the patch turned into a beautiful garden with fragrant flowers and herbs, becoming a place of peace for the villagers.</p>
-        
-    </div>
-    <div class="box">
-    <p class="box1">Moral: Kindness and gratitude are rewarded with true friendship and support.</p>
-
-    <h2> The Kind Swan and the Crow</h2>
-    <p>In a serene pond, there was a beautiful white swan named Sarah. She was known for her grace and kindness to all the creatures in the pond.
-
-        One winter, a poor injured crow named Cody asked Sarah for help. Despite their differences, Sarah allowed Cody to share her nest and fed him with her beak. She nursed him back to health.
-        
-        As Cody regained his strength, he became greedy and wanted Sarah’s nest for himself. He tricked Sarah into leaving by telling her about a supposedly better lake. When she arrived, she found it was polluted and inhospitable.
-        
-        Sarah returned to her old pond, tired and weak, but the other animals had seen her kindness and Cody’s betrayal. They chased Cody away, and Sarah was welcomed back with open wings.</p>
-        
-    </div>
-    <div class="box">
-    <p class="box1">Moral: With determination and a positive attitude, even the smallest can achieve great feats.</p>
-
-    <h2>The Little Engine That Could</h2>
-    <p>In a busy toyland, there was a little blue engine who loved to help others. She wasn’t the biggest or the strongest, but she had a determined spirit. One day, a big toy train needed to be pulled over a high mountain, but the strong engines refused, saying it was too heavy.
-
-        The little blue engine stepped forward and said, “I think I can.” With great effort and determination, she started pulling the heavy load up the steep mountain, repeating to herself, “I think I can, I think I can.”
-        
-        Despite the challenge, the little blue engine persevered and successfully carried the load over the mountain. She had shown that determination and a positive attitude could accomplish great things.</p>
-        
-    </div>
-    
-    
-
-    </body>
     <style>
-
-        h1{
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
             text-align: center;
         }
-        body > div {
-            background: #fff;
-            padding: 24px 0 0 0;
-          }
-        .box{
-            width: 800px;
-            height: 400px;
+        .box {
+            max-width: 800px;
             margin: 50px auto;
             color: aliceblue;
             padding: 20px;
@@ -95,13 +24,11 @@
             text-align: center;
             background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
         }
-
-
-        .box,p{
+        .box p {
             font-size: 20px;
         }
-        .box1{
-            width: 800px;
+        .box1 {
+            width: 100%;
             height: 40px;
             font-size: 18px;
             padding-top: 15px;
@@ -113,5 +40,74 @@
             position: sticky;
             top: -1px;
         }
+        @media (max-width: 600px) {
+            .box {
+                width: 100%;
+                padding: 10px;
+            }
+            .box p {
+                font-size: 16px;
+            }
+            .box1 {
+                font-size: 16px;
+            }
+        }
     </style>
+</head>
+<body>
+    <h1>The Short Stories!!</h1>
+    <div class="box">
+        <p class="box1">Moral: True greatness comes from kindness and wisdom, not just physical strength.</p>
+        <h2>The Kind Elephant</h2>
+        <p>In a lush jungle, there lived a wise and kind elephant named Ellie. Animals from all around sought her advice because she was known for her gentle wisdom.
+
+        One day, Leo, a young and boastful lion, challenged Ellie to a strength contest. But Ellie proposed a different challenge: to make the most animals smile in a day.
+
+        Leo roared at the animals, trying to make them smile, but they were too scared. Ellie, on the other hand, listened to their problems and shared her wisdom, bringing smiles to their faces. By the end of the day, Ellie had won the contest.
+
+        Leo realized that true greatness was not just about strength but also about kindness and wisdom. He asked Ellie to teach him, and from that day on, he became a wiser and kinder king.</p>
+    </div>
+    <div class="box">
+        <p class="box1">Moral: True magic is found in kindness and creativity, not in material possessions.</p>
+        <h2>The Magical Paintbrush</h2>
+        <p>In a small village, there lived a poor but talented artist named Mia. She dreamed of a magic paintbrush that could bring her paintings to life. One day, an old man gave her a magical paintbrush.
+
+        Mia began to create beautiful paintings, and every stroke of the brush made her creations come alive. She used this power to help her village, making food and shelter for those in need.
+
+        But word of her magic paintbrush reached a greedy king who demanded it for himself. Mia refused, and the king grew angry. He sent his soldiers to take the brush by force. When they tried, the brush painted a fierce storm, and the soldiers fled.
+
+        Mia, realizing the brush’s potential for misuse, decided to hide it where no one could find it. She continued to use her art to bring happiness and prosperity to her village, teaching them that true magic lies in kindness and creativity.</p>
+    </div>
+    <div class="box">
+        <p class="box1">Moral: With patience and care, even seemingly unpromising situations can turn into something beautiful.</p>
+        <h2>The Three Seeds of Hope</h2>
+        <p>Once, there was a boy named Sam who found three different seeds. He decided to plant them in his garden.
+
+        The first seed grew into a tall, strong tree that bore delicious fruits. Sam shared the fruits with the hungry villagers, and they were grateful.
+
+        The second seed grew into a small but sturdy bush covered in colourful flowers. Sam used these flowers to make perfumes and oils, creating a successful business that supported his family.
+
+        The third seed, however, yielded only thorns and weeds. Sam considered uprooting it, but he decided to give it another chance. He removed the thorns and took good care of it. Over time, the patch turned into a beautiful garden with fragrant flowers and herbs, becoming a place of peace for the villagers.</p>
+    </div>
+    <div class="box">
+        <p class="box1">Moral: Kindness and gratitude are rewarded with true friendship and support.</p>
+        <h2>The Kind Swan and the Crow</h2>
+        <p>In a serene pond, there was a beautiful white swan named Sarah. She was known for her grace and kindness to all the creatures in the pond.
+
+        One winter, a poor injured crow named Cody asked Sarah for help. Despite their differences, Sarah allowed Cody to share her nest and fed him with her beak. She nursed him back to health.
+
+        As Cody regained his strength, he became greedy and wanted Sarah’s nest for himself. He tricked Sarah into leaving by telling her about a supposedly better lake. When she arrived, she found it was polluted and inhospitable.
+
+        Sarah returned to her old pond, tired and weak, but the other animals had seen her kindness and Cody’s betrayal. They chased Cody away, and Sarah was welcomed back with open wings.</p>
+    </div>
+    <div class="box">
+        <p class="box1">Moral: With determination and a positive attitude, even the smallest can achieve great feats.</p>
+        <h2>The Little Engine That Could</h2>
+        <p>In a busy toyland, there was a little blue engine who loved to help others. She wasn’t the biggest or the strongest, but she had a determined spirit. One day, a big toy train needed to be pulled over a high mountain, but the strong engines refused, saying it was too heavy.
+
+        The little blue engine stepped forward and said, “I think I can.” With great effort and determination, she started pulling the heavy load up the steep mountain, repeating to herself, “I think I can, I think I can.”
+
+        Despite the challenge, the little blue engine persevered and successfully carried the load over the mountain. She had shown that determination and a positive attitude could accomplish great things.</p>
+    </div>
+</body>
 </html>
